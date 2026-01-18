@@ -1,20 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/09 23:15:28 by asobolev          #+#    #+#             */
-/*   Updated: 2026/01/17 22:04:32 by asobolev         ###   ########.tr       */
+/*   Created: 2026/01/18 01:04:03 by asobolev          #+#    #+#             */
+/*   Updated: 2026/01/18 01:17:56 by asobolev         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
-int	main(void)
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	printf("%ld", ft_strlen("ilyas\n"));
-	return (0);
+	size_t			i;
+	unsigned char	*ptr;
+
+	i = 0;
+	ptr = (unsigned char *)dest;
+	while (n > i)
+	{
+		ptr[i] = ((unsigned char *)src)[i];
+		i++;
+	}
+	return (dest);
 }
+/* 
+#include <stdio.h>
+int main()
+{
+	char dizi1[]="sa";
+	char dizi2[2];
+	ft_memcpy(dizi2,dizi1,sizeof(dizi1));
+	printf("%s",dizi2);
+
+} */

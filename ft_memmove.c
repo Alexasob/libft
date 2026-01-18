@@ -1,20 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/09 23:15:28 by asobolev          #+#    #+#             */
-/*   Updated: 2026/01/17 22:04:32 by asobolev         ###   ########.tr       */
+/*   Created: 2026/01/18 01:19:42 by asobolev          #+#    #+#             */
+/*   Updated: 2026/01/18 03:51:10 by asobolev         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
-int	main(void)
+void *ft_memmove(void *dest, const void *src, size_t n)
 {
-	printf("%ld", ft_strlen("ilyas\n"));
-	return (0);
+	ft_memcpy(dest,src,n);
+	return (dest);
+}
+#include  <stdio.h>
+int main()
+{
+	char dest[30]="123456789";
+	ft_memmove(dest+3,dest,7);
+	printf("%s",dest);
 }

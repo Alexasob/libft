@@ -1,15 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy                                          :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/14 04:44:20 by asobolev          #+#    #+#             */
-/*   Updated: 2026/01/14 05:10:13 by asobolev         ###   ########.tr       */
+/*   Created: 2026/01/18 03:52:57 by asobolev          #+#    #+#             */
+/*   Updated: 2026/01/18 04:19:14 by asobolev         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*memcpy(void *dest, const void *src, size_t n);
+int	ft_toupper(int c)
+{
+	if (c >= 97 && c <= 123)
+		return (c - 32);
+	return (c);
+}
+
+#include <stdio.h>
+int main ()
+{
+	char c='?';
+	c = ft_toupper(c);
+	printf("%c",c);
+}

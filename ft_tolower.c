@@ -1,20 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/09 23:15:28 by asobolev          #+#    #+#             */
-/*   Updated: 2026/01/17 22:04:32 by asobolev         ###   ########.tr       */
+/*   Created: 2026/01/18 04:14:31 by asobolev          #+#    #+#             */
+/*   Updated: 2026/01/18 04:18:02 by asobolev         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
-int	main(void)
+int ft_tolower(int c)
 {
-	printf("%ld", ft_strlen("ilyas\n"));
-	return (0);
+	if ( c >= 65 && c <= 90)
+		return (c+32);
+	return (c);
+}
+
+#include <stdio.h>
+int main ()
+{
+	char c='L';
+	c = ft_tolower(c);
+	printf("%c",c);
 }
