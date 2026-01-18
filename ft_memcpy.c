@@ -6,7 +6,7 @@
 /*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/18 01:04:03 by asobolev          #+#    #+#             */
-/*   Updated: 2026/01/18 01:17:56 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/01/18 10:31:28 by asobolev         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+
 /* 
 #include <stdio.h>
 int main()

@@ -1,28 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolower.c                                       :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/18 04:14:31 by asobolev          #+#    #+#             */
-/*   Updated: 2026/01/18 10:42:57 by asobolev         ###   ########.tr       */
+/*   Created: 2026/01/18 05:45:21 by asobolev          #+#    #+#             */
+/*   Updated: 2026/01/18 10:33:09 by asobolev         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_tolower(int c)
+char	*ft_strchr(const char *s, int c)
 {
-	if (c >= 65 && c <= 90)
-		return (c + 32);
-	return (c);
+	while (*s)
+	{
+		if (*s == c)
+			return ((char *)s);
+		s++;
+	}
+	return ((char *)s);
 }
 
 /* #include <stdio.h>
-int main ()
+int main()
 {
-	char c='L';
-	c = ft_tolower(c);
-	printf("%c",c);
+	char dizi[]="unooynamak";
+	char c='m';
+	
+	printf("%s",ft_strchr(dizi,c));
 } */

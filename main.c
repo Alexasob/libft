@@ -6,12 +6,11 @@
 /*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/09 23:15:28 by asobolev          #+#    #+#             */
-/*   Updated: 2026/01/17 22:04:32 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/01/18 10:30:58 by asobolev         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 int	main(void)
 {
