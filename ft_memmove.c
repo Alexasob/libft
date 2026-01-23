@@ -6,22 +6,63 @@
 /*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/18 01:19:42 by asobolev          #+#    #+#             */
-/*   Updated: 2026/01/18 10:38:09 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/01/23 19:57:46 by asobolev         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	ft_memcpy(dest, src, n);
+	char	*s;
+	char	*d;
+
+	s = (char *)src;
+	d = (char *)dest;
+	if (d < s)
+	{
+		ft_memcpy(d, s, n);
+	}
+	else if (d > s) // dest ilerdeyse sorce den
+	{
+		while (n > 0)
+		{
+			n--;
+			d[n] = s[n];
+		}
+	}
 	return (dest);
 }
 
 /* #include  <stdio.h>
 int main()
 {
-	char dest[30]="123456789";
-	ft_memmove(dest+3,dest,7);
-	printf("%s",dest);
-} */
+	char dest[] ="fatih";
+
+	ft_memmove(dest +1 , dest,5);
+	printf("%s",dest );
+	// printf("%s\n", (dest + 0));
+}
+
+//	0	1	2	3	4	5
+//	f	a	t	f	a  \t   i h  0    src
+
+// 					
+// while()
+// {
+// 	dst[5] = src[5];
+//	 		f
+// 	dst[4] = src[4];
+// 	dst[3] = src[3];
+
+*/
+
+
+0 1 2 3 4 
+a b c d /0 dest 
+
+b c d /0 /0 sorce
+0 1 2 3  4   
+
+

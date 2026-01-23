@@ -12,3 +12,5 @@ int main() {
 	memcpy ; Eğer diziler int türünde olursa, her bir int değeri 4 byte yer kaplar (genellikle 32-bit sistemlerde). memcpy fonksiyonu byte düzeyinde çalıştığı için, eğer bir int dizisini char dizisine kopyalamaya çalışırsak, bu durumda veri kaybı yaşanabilir veya yanlış kopyalamalar olabilir.
 
 Cast = “Ben biliyorum, sen bu veriyi şu tip gibi kabul et” demektir. bellekte hiçbir şey değişmez  sadece yorumlama değişir
+
+    ft_memmove;(dest, dest+2, 7); 2.indeksten başlar 

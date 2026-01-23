@@ -6,7 +6,7 @@
 /*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/10 04:47:52 by asobolev          #+#    #+#             */
-/*   Updated: 2026/01/14 03:25:31 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/01/23 15:47:54 by asobolev         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ void	*ft_memset(void *s, int c, size_t n)
 	a = (unsigned char *)s;
 	while (n != i)
 	{
+		ft_putchar_fd(a[i], 1);
 		a[i++] = (unsigned char)c;
 	}
 	return (s);

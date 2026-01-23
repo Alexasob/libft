@@ -1,30 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/09 23:45:52 by asobolev          #+#    #+#             */
-/*   Updated: 2026/01/20 19:44:53 by asobolev         ###   ########.tr       */
+/*   Created: 2026/01/23 17:10:55 by asobolev          #+#    #+#             */
+/*   Updated: 2026/01/23 20:13:44 by asobolev         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlen(const char *s)
+size_t	strlcat(char *dst, const char *src, size_t size)
 {
-	const char	*p = s;
+	size = ft_strlen(dst)
 
-	while (*p++)
-		;
-	return (p - s - 1);
+	return(dst)
 }
-
-/* #include <stdio.h>
-#include <stdlib.h>
-int main ()
-{
-	char dizii[]="keremnaber la";
-	printf("%zu",ft_strlen(dizii));
-} */
