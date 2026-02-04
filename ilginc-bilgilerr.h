@@ -13,4 +13,4 @@ int main() {
 
 Cast = “Ben biliyorum, sen bu veriyi şu tip gibi kabul et” demektir. bellekte hiçbir şey değişmez  sadece yorumlama değişir
 
-    ft_memmove;(dest, dest+2, 7); 2.indeksten başlar 
+    ft_memmove;sorcee ilerde ise boxulabilir bu yuzden geriden yapıştırmaya başl
