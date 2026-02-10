@@ -6,13 +6,13 @@
 /*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/09 21:40:03 by asobolev          #+#    #+#             */
-/*   Updated: 2026/01/09 23:20:19 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/02/09 16:30:42 by asobolev         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isdigit(int a)
 {
-	if (a >= 48 && a <= 57)
+	if (a >= '0' && a <= '9')
 		return (1);
 	return (0);
 }

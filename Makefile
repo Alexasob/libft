@@ -10,9 +10,17 @@ SRCS = ft_bzero.c \
 		ft_isascii.c \
 		ft_isprint.c \
 		ft_memset.c \
-		ft_putendl_fd.c\
-		ft_putchar_fd.c
-# 		ft_memcpy \
+		ft_memcpy.c\
+		ft_memmove.c\
+		ft_strlcpy.c\
+		ft_strlcat.c\
+		ft_toupper.c\
+		ft_tolower.c\
+		ft_strchr.c\
+		ft_atoi.c\
+		ft_strnstr\
+		ft_strchr\
+
 
 OBJS = $(SRCS:.c=.o)
 

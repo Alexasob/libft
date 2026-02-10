@@ -1,22 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/09 17:53:56 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/09 17:08:29 by asobolev         ###   ########.tr       */
+/*   Created: 2026/02/10 04:41:30 by asobolev          #+#    #+#             */
+/*   Updated: 2026/02/10 06:29:11 by asobolev         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalpha(int c)
+char *ft_strdup(const char *s)
 {
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+	char *start;
+	char *ptr;
+		ptr =malloc(ft_strlen(s)+1);
+	if (!ptr)
+		return(NULL);
+	start = ptr;
+	while (*s)
 	{
-		return (1);
+		*ptr = *s;
+		ptr++;
+		s++;
 	}
-	return (0);
+	*ptr = '\0';
+	return (start);
 }
+
+#include <stdio.h>
+int main()
+{
+	char *a;
+
+	a = ft_strdup("abcd");
+	
+	printf("%s",a);
+}
+

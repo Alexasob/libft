@@ -6,7 +6,7 @@
 /*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/23 17:10:55 by asobolev          #+#    #+#             */
-/*   Updated: 2026/01/29 06:57:30 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/02/09 17:15:19 by asobolev         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	int	i;
 	int	full;
-	printf("AA");
+
 	i = 0;
 	full = ft_strlen(dst);
 	while (full != (size -1))
@@ -35,11 +35,11 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	return (ft_strlen(dst) + ft_strlen(src));
 }
 
-#include <stdio.h>
-int main()
-{
-	size_t size;
-	char cuzdan1[20]="sel";
-	char canta2[]="çok";
-	printf("%zu",ft_strlcat(cuzdan1,canta2,20));
-}
+// #include <stdio.h>
+// int main()
+// {
+// 	size_t size;
+// 	char cuzdan1[20]="sel";
+// 	char canta2[]="çok";
+// 	printf("%zu",ft_strlcat(cuzdan1,canta2,20));
+// }

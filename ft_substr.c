@@ -6,7 +6,7 @@
 /*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/04 04:34:11 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/04 05:02:22 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/02/09 16:09:45 by asobolev         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,9 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	return (a);
 }
 
-int main()
+/* int main()
 {
 	char *s = "ilyasasfafsaf";
 	printf("%s\n",(ft_substr(s, 2, 4)));
 }
+	*/
