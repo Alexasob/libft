@@ -1,36 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_putendln.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/23 17:10:55 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/10 12:12:09 by asobolev         ###   ########.tr       */
+/*   Created: 2026/02/10 15:02:18 by asobolev          #+#    #+#             */
+/*   Updated: 2026/02/10 15:25:21 by asobolev         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
-size_t	ft_strlcat(char *dst, const char *src, size_t size)
+void ft_putendl_fd(char *s, int fd)
 {
-	size_t	i;
-	size_t	full;
+	if (!s)
+		return ;
+	ft_putstr(s, fd);
+	write(fd,'\n',1);
+}
 
-	i = 0;
-	full = ft_strlen(dst);
-	while (full != (size -1))
-	{
-		while (src[i] != '\0')
-		{
-			printf("CC");
-			dst[full++] = src[i++];
-		}
-		full++;
-		dst [full] = '\0';
-		return (ft_strlen(dst) + ft_strlen(src));
-		printf("dst");
-	}
-	return (ft_strlen(dst) + ft_strlen(src));
+int main()
+{
+	char s[]="abcdef";
+	ft_putendl_fd(s,1);
 }

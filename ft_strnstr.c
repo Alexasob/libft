@@ -6,13 +6,13 @@
 /*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/09 18:00:35 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/09 23:55:11 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/02/10 12:17:37 by asobolev         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *strnstr(const char *big, const char *little, size_t len)
+char *ft_strnstr(const char *big, const char *little, size_t len)
 {
 	if (little[0] == '\0')
 		return ((char *)big);
@@ -33,7 +33,6 @@ char *strnstr(const char *big, const char *little, size_t len)
 			return (NULL);
 		if (big[SO] == little [SA])
 			start = (char *)big+SO;
-			
 		while (big[SO] == little [SA])
 		{
 			Count++;
@@ -50,11 +49,3 @@ char *strnstr(const char *big, const char *little, size_t len)
 		}
 	}
 }
-
-/* #include<stdio.h>
-int main()
-{
-	char big[]="abcsalamdef";
-	char litlle[]="salam";
-	printf("%s",strnstr(big,litlle,99));
-} */
