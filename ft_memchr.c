@@ -1,25 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/10 00:51:34 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/10 02:50:53 by asobolev         ###   ########.tr       */
+/*   Created: 2026/02/11 12:44:00 by asobolev          #+#    #+#             */
+/*   Updated: 2026/02/11 13:13:52 by asobolev         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
-int memcmp(const void *s1, const void *s2, size_t n)
+void *ft_memchr(const void *s, int c, size_t n)
 {
+	unsigned char *a;
+	a = (unsigned char *)s;
+	size_t i;
+	i = 0;
 	
+	while (*a && i < n)
+	{
+		if (*a == c)
+			return ((char *)s);
+		a++;
+		i++;
+	}
+	return ((char *)s);
 }
-
-int main()
+int main ()
 {
-	int s1[]={1,2,3,4}
-	int s2[]={1,2,3}
-	ft_atoi()
+	char str[]="asdfghjkl";
+	ft_memchr(str,'s',2);
 }

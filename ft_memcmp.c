@@ -1,12 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striteri.c                                      :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/11 08:33:25 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/11 15:47:06 by asobolev         ###   ########.tr       */
+/*   Created: 2026/02/10 00:51:34 by asobolev          #+#    #+#             */
+/*   Updated: 2026/02/11 12:42:57 by asobolev         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <libft.h>
+
+int	memcmp(const void *s1, const void *s2, size_t n)
+{
+	unsigned char	*ptr1;
+	unsigned char	*ptr2;
+	size_t			i;
+
+	ptr1 = (unsigned char *)s1;
+	ptr2 = (unsigned char *)s2;
+	i = 0;
+	while (i < n)
+	{
+		if (ptr1[i] != ptr2[i])
+			return (ptr1[i] - ptr2[i]);
+		i++;
+	}
+	return (0);
+}
