@@ -6,7 +6,7 @@
 /*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/10 10:22:22 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/11 12:51:20 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/02/14 02:44:51 by asobolev         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,11 @@ void ft_putstr_fd(char *s, int fd)
 	write(fd, s, i);
 }
 
-#include <fcntl.h>
+/* #include <fcntl.h>
 
 int main()
 {
 	int fd;
 	ft_putstr_fd("alexcalisolmatilcaksin", 1);
 	close (fd);
-}
+} */

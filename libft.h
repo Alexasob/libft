@@ -6,7 +6,7 @@
 /*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/09 21:55:22 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/11 02:40:50 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/02/14 02:52:39 by asobolev         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,9 +35,12 @@ char	*ft_substr(char const *s, unsigned int start, size_t len);
 char *ft_strnstr(const char *big, const char *little, size_t len);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 char	*ft_strchr(const char *s, int c);
+void *ft_calloc(size_t nmemb, size_t size);
+char	**ft_split(char const *s, char c);
 
 // //yeni fonksiyonlar
-// void	ft_putendl_fd(char *s, int fd);
-// void	ft_putchar_fd(int c, int fd);
+void ft_putendl_fd(char *s, int fd);
+void ft_putchar_fd(char c, int fd);
+void ft_putstr_fd(char *s, int fd);
 
 #endif

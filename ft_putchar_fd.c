@@ -6,15 +6,15 @@
 /*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/10 09:05:24 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/10 10:19:49 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/02/14 02:51:08 by asobolev         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putchar_fd(char c, int fd)
+void	ft_putchar_fd(char c, int fd)
 {
-	write(fd,&c,1);
+	write(fd, &c, 1);
 }
 
 //fd nin içerikleri ve anlamları önemli
