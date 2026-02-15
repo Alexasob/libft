@@ -6,17 +6,18 @@
 /*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/23 16:10:14 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/10 12:09:41 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/02/14 05:18:57 by asobolev         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	strlcpy(char *dst, const char *src, size_t size)
+size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	size_t	lenght;
-	size_t	i = 0;
+	size_t	i;
 
+	i = 0;
 	lenght = ft_strlen(src);
 	if (size == 0)
 	{

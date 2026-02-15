@@ -3,49 +3,50 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
+/*   By: aibolev <aibolev@student.42istanbul.com.tr +#+  +:+       +#+      */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/09 18:00:35 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/10 12:17:37 by asobolev         ###   ########.tr       */
+/*   Created: 2026/02/09 18:00:35 by aibolev          #+#    #+#             */
+/*   Updated: 2026/02/14 06:00:09 by aibolev         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strnstr(const char *big, const char *little, size_t len)
+char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
+	size_t	i;
+	size_t	j;
+	char	*start;
+	size_t	count;
+
+	i = 0;
+	j = 0;
 	if (little[0] == '\0')
 		return ((char *)big);
-	size_t SA = 0;
-	size_t SO = 0;
-	char *start;
-	size_t Count =0;
-
+	count = 0;
 	while (1)
 	{
 		start = 0;
-		while (big[SO] != little [SA] )
+		while (big[i] != little[j])
 		{
-			SO++;
-			Count++;
+			i++;
+			count++;
 		}
-		if (Count >= len)
+		if (count >= len)
 			return (NULL);
-		if (big[SO] == little [SA])
-			start = (char *)big+SO;
-		while (big[SO] == little [SA])
+		if (big[i] == little [j])
+			start = (char *) big + i;
+		while (big[i] == little [j])
 		{
-			Count++;
-			SO++;
-			SA++;
-			if (little[SA] == '\0')
+			count++;
+			i++;
+			j++;
+			if (little[j] == '\0')
 				return ((char *)start);
-			if (Count >= len)
+			if (count >= len)
 				return (NULL);
 		}
-		if (big[SO] != little[SA] && start != 0)
-		{
-			SA = 0;
-		}
+		if (big[i] != little[j] && start != 0)
+			j = 0;
 	}
 }

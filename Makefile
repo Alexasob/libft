@@ -24,7 +24,6 @@ SRC =	ft_atoi.c \
 		ft_split.c \
 		ft_strchr.c \
 		ft_strdup.c \
-		ft_striteri.c \
 		ft_strjoin.c \
 		ft_strlcat.c \
 		ft_strlcpy.c \
@@ -35,7 +34,11 @@ SRC =	ft_atoi.c \
 		ft_strtrim.c \
 		ft_substr.c \
 		ft_tolower.c \
-		ft_toupper.c
+		ft_toupper.c \
+		ft_putnbr_fd.c \
+		ft_memcmp.c \
+		ft_memchr.c 
+
 
 
 OBJ		= $(SRC:.c=.o)

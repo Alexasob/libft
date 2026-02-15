@@ -6,7 +6,7 @@
 /*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/13 17:02:31 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/14 02:35:58 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/02/14 06:09:49 by asobolev         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,10 +29,12 @@ static int	wordcount(char const *s, char c)
 	return (wordcount);
 }
 
-static void	freeptr(char **ptr )
+static void	freeptr(char **ptr)
 {
 	int	i;
 
+	if (!ptr)
+		return ;
 	i = 0;
 	while (ptr[i])
 	{
@@ -70,3 +72,9 @@ char	**ft_split(char const *s, char c)
 	}
 	return (ptr);
 }
+
+/* void main ()
+{
+	 char *str="ahmet elma \0 yedi";
+	char dizi=" ";
+} */

@@ -6,7 +6,7 @@
 /*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/04 04:34:11 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/14 03:56:22 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/02/14 06:17:41 by asobolev         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t		i;
 	char		*a;
 
+	if (!s)
+		return (NULL);
 	i = 0;
 	a = malloc((len + 1) * sizeof(char));
 	if (!a)

@@ -6,13 +6,13 @@
 /*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/11 04:21:14 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/11 05:54:24 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/02/14 04:52:05 by asobolev         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int  ft_count(int n)
+static int  ft_count(int n)
 {
 	int x;
 	x = 0;
@@ -49,10 +49,10 @@ char *ft_itoa(int n)
 	return(str);
 }
 
-#include <stdio.h>
+/* #include <stdio.h>
 #include <limits.h>
 
 int main()
 {
 	printf("%s\n",ft_itoa(-3));
-}
+} */
