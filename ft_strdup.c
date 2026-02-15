@@ -6,19 +6,20 @@
 /*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/10 04:41:30 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/10 12:14:52 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/02/15 18:55:06 by asobolev         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strdup(const char *s)
+char	*ft_strdup(const char *s)
 {
-	char *start;
-	char *ptr;
-		ptr =malloc(ft_strlen(s)+1);
+	char	*start;
+	char	*ptr;
+
+	ptr = malloc(ft_strlen(s) + 1);
 	if (!ptr)
-		return(NULL);
+		return (NULL);
 	start = ptr;
 	while (*s)
 	{
@@ -29,4 +30,3 @@ char *ft_strdup(const char *s)
 	*ptr = '\0';
 	return (start);
 }
-	

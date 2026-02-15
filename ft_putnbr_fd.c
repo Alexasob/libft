@@ -6,10 +6,9 @@
 /*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/10 15:26:32 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/10 19:42:21 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/02/15 18:55:29 by asobolev         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "libft.h"
 

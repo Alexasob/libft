@@ -6,7 +6,7 @@
 /*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/18 01:19:42 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/09 17:14:29 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/02/15 18:51:52 by asobolev         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,14 +45,14 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 // }
 //	0	1	2	3	4	5
 //	f	a	t	f	a  \t   i h  0    src
-// 					
+//
 // while()
 // {
 // 	dst[5] = src[5];
-//	 		f
+//				f
 // 	dst[4] = src[4];
 // 	dst[3] = src[3];
-// 0 1 2 3 4 
-// a b c d /0 dest 
+// 0 1 2 3 4
+// a b c d /0 dest
 // b c d /0 /0 sorce
 // 0 1 2 3  4

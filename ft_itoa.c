@@ -6,37 +6,40 @@
 /*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/11 04:21:14 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/14 04:52:05 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/02/15 18:45:06 by asobolev         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int  ft_count(int n)
+static int	ft_count(int n)
 {
-	int x;
+	int	x;
+
 	x = 0;
-	if(n < 0 || n ==  0)
+	if (n < 0 || n == 0)
 		x++;
 	while (n)
 	{
-		n = n/10;
+		n = n / 10;
 		x++;
 	}
-	return(x);
+	return (x);
 }
 
-char *ft_itoa(int n)
+char	*ft_itoa(int n)
 {
-	long val;
+	long	val;
+	char	*str;
+	int		x;
+
 	val = n;
-	char *str;
-	int x = ft_count(val);
-	str= malloc(sizeof(char) * (x+1));
-	str[x]='\0';
-	if(val < 0)
+	x = ft_count(val);
+	str = malloc(sizeof(char) * (x + 1));
+	str[x] = '\0';
+	if (val < 0)
 	{
-		str [0] = '-';
+		str[0] = '-';
 		val *= -1;
 	}
 	x--;
@@ -46,13 +49,13 @@ char *ft_itoa(int n)
 		val = val / 10;
 		x--;
 	}
-	return(str);
+	return (str);
 }
 
 /* #include <stdio.h>
 #include <limits.h>
 
-int main()
+int	main(void)
 {
 	printf("%s\n",ft_itoa(-3));
 } */
