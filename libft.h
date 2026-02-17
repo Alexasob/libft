@@ -6,7 +6,7 @@
 /*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/09 21:55:22 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/16 09:48:15 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/02/17 03:31:40 by asobolev         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,15 +36,25 @@ size_t	ft_strlen(const char *s);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 
+t_list	*ft_lstlast(t_list *lst);
+t_list	*ft_lstnew(void *content);
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *),void (*del)(void *));
+
+void 	ft_lstadd_back(t_list **lst, t_list *new);
+void 	ft_lstadd_front(t_list **lst, t_list *new);
+void 	ft_lstdelone(t_list *lst, void (*del)(void*));
+void 	ft_lstclear(t_list **lst, void (*del)(void*));
 void	*ft_memset(void *s, int c, size_t n);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t n);
+void	*ft_calloc(size_t nmemb, size_t size);
 void	ft_bzero(void *s, size_t n);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 void	*ft_memchr(const void *s, int c, size_t n);
+void 	ft_lstiter(t_list *lst, void (*f)(void *));
 
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strnstr(const char *big, const char *little, size_t len);

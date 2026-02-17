@@ -1,34 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/16 02:31:16 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/16 17:04:19 by asobolev         ###   ########.tr       */
+/*   Created: 2026/02/17 02:52:30 by asobolev          #+#    #+#             */
+/*   Updated: 2026/02/17 03:24:30 by asobolev         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstnew(void *content)
+void ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	t_list *root;
-	root = malloc(sizeof(t_list));
-	if (!root)
-		return (NULL);
-	
-	root->content = content;
-	root->next = NULL;
-	return(root);
+	if (!lst || !f)
+		return;
+	while (lst)
+	{
+		f(lst->content);
+		lst = lst->next;
+	}
 }
-
-/* 
-int main ()
-{
-	char arr[] ="saalex";
-	t_list *yeni = ft_lstnew(arr);
-	printf("%s",yeni->content);
-}
- */

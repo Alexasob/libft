@@ -1,34 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/02/16 02:31:16 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/16 17:04:19 by asobolev         ###   ########.tr       */
+/*   Created: 2026/02/16 12:41:29 by asobolev          #+#    #+#             */
+/*   Updated: 2026/02/17 02:49:11 by asobolev         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstnew(void *content)
+void ft_lstdelone(t_list *lst, void (*del)(void*))
 {
-	t_list *root;
-	root = malloc(sizeof(t_list));
-	if (!root)
-		return (NULL);
-	
-	root->content = content;
-	root->next = NULL;
-	return(root);
+	if (!lst || !del)
+		return ;
+	del(lst->content);
+	free(lst);
 }
-
-/* 
-int main ()
-{
-	char arr[] ="saalex";
-	t_list *yeni = ft_lstnew(arr);
-	printf("%s",yeni->content);
-}
- */

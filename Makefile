@@ -38,8 +38,17 @@ SRC =	ft_atoi.c \
 		ft_memchr.c \
 		ft_strmapi.c\
  		ft_strlcat.c \
-#		ft_strnstr.c \
-
+		ft_lstlast.c\
+		ft_lstnew.c \
+		ft_lstadd_front.c \
+		ft_lstadd_back.c \
+		ft_lstsize.c \
+		ft_lstdelone.c \
+		ft_lstclear.c \
+		ft_lstiter.c\
+		t_list *ft_lstmap(t_list *lst, void *(*f)(void *),
+void (*del)(void *));
+#		ft_strnstr.c 
 
 
 OBJ		= $(SRC:.c=.o)
