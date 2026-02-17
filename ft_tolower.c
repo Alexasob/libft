@@ -6,11 +6,9 @@
 /*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/18 04:14:31 by asobolev          #+#    #+#             */
-/*   Updated: 2026/01/18 10:42:57 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/02/17 07:24:18 by asobolev         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_tolower(int c)
 {

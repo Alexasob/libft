@@ -6,7 +6,7 @@
 /*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/16 02:31:16 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/16 17:04:19 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/02/17 14:40:59 by asobolev         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,14 @@
 
 t_list	*ft_lstnew(void *content)
 {
-	t_list *root;
+	t_list	*root;
+
 	root = malloc(sizeof(t_list));
 	if (!root)
 		return (NULL);
-	
 	root->content = content;
 	root->next = NULL;
-	return(root);
+	return (root);
 }
 
 /* 

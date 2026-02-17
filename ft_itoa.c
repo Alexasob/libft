@@ -6,7 +6,7 @@
 /*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/11 04:21:14 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/15 18:45:06 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/02/17 14:04:15 by asobolev         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,16 @@
 
 static int	ft_count(int n)
 {
-	int	x;
+	int		x;
+	long	val;
 
+	val = n;
 	x = 0;
-	if (n < 0 || n == 0)
+	if (val < 0 || val == 0)
 		x++;
-	while (n)
+	while (val)
 	{
-		n = n / 10;
+		val = val / 10;
 		x++;
 	}
 	return (x);
@@ -36,19 +38,22 @@ char	*ft_itoa(int n)
 	val = n;
 	x = ft_count(val);
 	str = malloc(sizeof(char) * (x + 1));
+	if (!str)
+		return (NULL);
 	str[x] = '\0';
 	if (val < 0)
 	{
-		str[0] = '-';
 		val *= -1;
 	}
 	x--;
-	while (x >= 0 && str[x] != '-')
+	while (x >= 0)
 	{
 		str[x] = (val % 10) + '0';
 		val = val / 10;
 		x--;
 	}
+	if (n < 0)
+		str[0] = '-';
 	return (str);
 }
 

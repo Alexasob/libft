@@ -6,7 +6,7 @@
 /*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/13 17:02:31 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/14 06:09:49 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/02/17 13:49:47 by asobolev         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,9 @@ static int	wordcount(char const *s, char c)
 	{
 		while (*s == c && *s)
 			s++;
-		if (*s != c)
+		if (*s)
 			wordcount ++;
-		while (*s != c && *s)
+		while (*s && *s != c)
 			s++;
 	}
 	return (wordcount);

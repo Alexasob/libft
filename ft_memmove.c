@@ -6,12 +6,11 @@
 /*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/18 01:19:42 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/15 18:51:52 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/02/17 14:43:32 by asobolev         ###   ########.tr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
@@ -24,7 +23,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	{
 		ft_memcpy(d, s, n);
 	}
-	else if (d > s) // dest ilerdeyse sorce den
+	else if (d > s)
 	{
 		while (n > 0)
 		{
