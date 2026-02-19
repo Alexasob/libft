@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
+/*   By: asobolev <asobolev@student.42istanbul.com.t+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/15 20:25:37 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/17 14:08:04 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/02/19 05:49:00 by asobolev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

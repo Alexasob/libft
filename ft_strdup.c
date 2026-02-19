@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
+/*   By: asobolev <asobolev@student.42istanbul.com.t+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/10 04:41:30 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/15 18:55:06 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/02/19 05:48:58 by asobolev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

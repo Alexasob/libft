@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
+/*   By: asobolev <asobolev@student.42istanbul.com.t+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/18 01:04:03 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/09 17:09:36 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/02/19 05:46:40 by asobolev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,14 +28,3 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-
-/* 
-#include <stdio.h>
-int main()
-{
-	char dizi1[]="sa";
-	char dizi2[2];
-	ft_memcpy(dizi2,dizi1,sizeof(dizi1));
-	printf("%s",dizi2);
-
-} */

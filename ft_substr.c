@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
+/*   By: asobolev <asobolev@student.42istanbul.com.t+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/04 04:34:11 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/17 13:46:44 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/02/19 05:50:04 by asobolev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,10 +35,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	a[i] = '\0';
 	return (a);
 }
-
-/* int main()
-{
-	char *s = "ilyasasfafsaf";
-	printf("%s\n",(ft_substr(s, 2, 4)));
-}
-	*/

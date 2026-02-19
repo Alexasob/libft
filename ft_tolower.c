@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
+/*   By: asobolev <asobolev@student.42istanbul.com.t+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/18 04:14:31 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/17 07:24:18 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/02/19 05:50:08 by asobolev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,3 @@ int	ft_tolower(int c)
 		return (c + 32);
 	return (c);
 }
-
-/* #include <stdio.h>
-int main ()
-{
-	char c='L';
-	c = ft_tolower(c);
-	printf("%c",c);
-} */

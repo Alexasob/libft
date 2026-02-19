@@ -4,7 +4,7 @@ _This project has been created as part of the 42 curriculum by asobolev._
 
 ## Description
 
-Libft is the firs project in the 42 curriculum.\
+Libft is the first project in the 42 curriculum.
 The objective is to recreate a custom C library by reimplementing
 standard C library functions and creating additional utility functions.
 

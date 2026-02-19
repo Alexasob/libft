@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
+/*   By: asobolev <asobolev@student.42istanbul.com.t+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/11 04:21:14 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/17 14:04:15 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/02/19 05:47:20 by asobolev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,11 +56,3 @@ char	*ft_itoa(int n)
 		str[0] = '-';
 	return (str);
 }
-
-/* #include <stdio.h>
-#include <limits.h>
-
-int	main(void)
-{
-	printf("%s\n",ft_itoa(-3));
-} */

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
+/*   By: asobolev <asobolev@student.42istanbul.com.t+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/16 10:39:13 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/17 14:24:26 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/02/19 05:46:25 by asobolev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
+/*   By: asobolev <asobolev@student.42istanbul.com.t+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/18 05:45:21 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/14 05:47:18 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/02/19 05:48:49 by asobolev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,11 +22,3 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)s);
 	return (0);
 }
-
-// /* #include <stdio.h>
-// int main()
-// {
-// 	char dizi[]="unooynamak";
-// 	char c='m'
-// 	printf("%s",ft_strchr(dizi,c));
-// } */

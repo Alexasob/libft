@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
+/*   By: asobolev <asobolev@student.42istanbul.com.t+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/13 17:02:31 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/17 13:49:47 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/02/19 05:59:21 by asobolev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,9 +72,3 @@ char	**ft_split(char const *s, char c)
 	}
 	return (ptr);
 }
-
-/* void main ()
-{
-	 char *str="ahmet elma \0 yedi";
-	char dizi=" ";
-} */

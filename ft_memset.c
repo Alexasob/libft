@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
+/*   By: asobolev <asobolev@student.42istanbul.com.t+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/10 04:47:52 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/17 02:47:49 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/02/19 05:47:50 by asobolev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

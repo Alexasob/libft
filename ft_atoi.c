@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
+/*   By: asobolev <asobolev@student.42istanbul.com.t+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/28 17:24:02 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/17 14:41:42 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/02/19 05:45:11 by asobolev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,9 @@ int	ft_atoi(const char *nptr)
 	{
 		i++;
 	}
-	if (nptr [i] == '-' || nptr [i] == '+')
+	if (nptr[i] == '-' || nptr[i] == '+')
 	{
-		if (nptr [i] == '-')
+		if (nptr[i] == '-')
 			s = -1;
 		i++;
 	}

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
+/*   By: asobolev <asobolev@student.42istanbul.com.t+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/16 02:31:16 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/17 14:40:59 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/02/19 05:47:37 by asobolev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,12 +23,3 @@ t_list	*ft_lstnew(void *content)
 	root->next = NULL;
 	return (root);
 }
-
-/* 
-int main ()
-{
-	char arr[] ="saalex";
-	t_list *yeni = ft_lstnew(arr);
-	printf("%s",yeni->content);
-}
- */

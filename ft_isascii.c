@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
+/*   By: asobolev <asobolev@student.42istanbul.com.t+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/09 23:12:55 by asobolev          #+#    #+#             */
-/*   Updated: 2026/01/18 10:31:54 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/02/19 05:45:33 by asobolev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

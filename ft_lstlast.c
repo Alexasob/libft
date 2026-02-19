@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
+/*   By: asobolev <asobolev@student.42istanbul.com.t+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/16 10:54:58 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/17 14:39:48 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/02/19 05:46:01 by asobolev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

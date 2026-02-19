@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
+/*   By: asobolev <asobolev@student.42istanbul.com.t+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/16 10:24:50 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/17 14:37:58 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/02/19 05:45:52 by asobolev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

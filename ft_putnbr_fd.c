@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
+/*   By: asobolev <asobolev@student.42istanbul.com.t+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/10 15:26:32 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/15 18:55:29 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/02/19 05:48:24 by asobolev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

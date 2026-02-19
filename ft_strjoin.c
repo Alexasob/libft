@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
+/*   By: asobolev <asobolev@student.42istanbul.com.t+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/10 07:55:10 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/17 14:45:44 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/02/19 05:49:06 by asobolev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,14 +31,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	*ptr = '\0';
 	return (strart);
 }
-// #include <stdio.h>
-// int main()
-// {	char *p;
-// 	char s1[]="abcde";
-// 	char s2[]="fhgcz";
-// 	p = ft_strjoin(s1,s2);
-// 	printf("%s\n",p);
-// 	printf("len1=%zu len2=%zu\n", ft_strlen(s1), ft_strlen(s2));
-
-// 	free(p);
-// }

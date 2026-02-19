@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
+/*   By: asobolev <asobolev@student.42istanbul.com.t+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/16 12:41:29 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/17 14:38:14 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/02/19 05:45:58 by asobolev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

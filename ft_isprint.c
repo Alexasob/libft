@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
+/*   By: asobolev <asobolev@student.42istanbul.com.t+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/09 23:30:17 by asobolev          #+#    #+#             */
-/*   Updated: 2026/01/09 23:35:53 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/02/19 05:45:39 by asobolev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

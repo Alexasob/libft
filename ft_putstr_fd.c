@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
+/*   By: asobolev <asobolev@student.42istanbul.com.t+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/10 10:22:22 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/15 18:52:13 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/02/19 05:48:30 by asobolev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,12 +21,3 @@ void	ft_putstr_fd(char *s, int fd)
 	i = ft_strlen(s);
 	write(fd, s, i);
 }
-
-/* #include <fcntl.h>
-
-int	main(void)
-{
-	int fd;
-	ft_putstr_fd("alexcalisolmatilcaksin", 1);
-	close (fd);
-} */

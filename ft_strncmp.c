@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
+/*   By: asobolev <asobolev@student.42istanbul.com.t+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/09 23:20:42 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/15 18:54:22 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/02/19 05:49:38 by asobolev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 		return (0);
 	return ((unsigned char)*s1 - (unsigned char)*s2);
 }
-/* #include <stdio.h>
-int	main(void)
-{
-	char s1[]="a";
-	char s2[]="";
-
-	printf("%d",ft_strncmp(s1,s2,0));
-} */

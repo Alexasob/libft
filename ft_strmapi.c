@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
+/*   By: asobolev <asobolev@student.42istanbul.com.t+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/15 20:58:08 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/17 14:50:34 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/02/19 05:49:33 by asobolev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,15 +32,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	}
 	return (ptr);
 }
-
-/* 
-#include <stdio.h>
-int main()
-{
-	char dii[]= "selam meltemmmmmmmaaaaa";
-	char *ptr;
-
-	ptr =ft_strmapi(dii, funk);
-	printf("%s", ptr);
-	return 0;
-} */

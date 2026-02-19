@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
+/*   By: asobolev <asobolev@student.42istanbul.com.t+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/10 19:46:54 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/14 05:15:36 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/02/19 05:49:59 by asobolev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,12 +36,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	ptr[i] = '\0';
 	return (ptr);
 }
-
-/* #include <stdio.h>
-int main ()
-{
-	char *b="xxxalexxxx";
-	char *c=ft_strtrim(b,"xw");
-	printf("%s", c);
-	free(c);
-} */

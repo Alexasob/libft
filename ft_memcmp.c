@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
+/*   By: asobolev <asobolev@student.42istanbul.com.t+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/10 00:51:34 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/17 14:43:18 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/02/19 05:46:30 by asobolev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

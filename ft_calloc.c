@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: asobolev <asobolev@student.42istanbul.com.tr +#+  +:+       +#+      */
+/*   By: asobolev <asobolev@student.42istanbul.com.t+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/10 03:53:38 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/17 13:42:00 by asobolev         ###   ########.tr       */
+/*   Updated: 2026/02/19 05:47:10 by asobolev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,10 +24,3 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	ft_bzero(ptr, (size * nmemb));
 	return (ptr);
 }
-
-/* int main ()
-{ 
-	char *p;
-	p = ft_calloc( 10, sizeof(int));
-	free(p);
-} */
