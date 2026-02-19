@@ -6,7 +6,7 @@
 /*   By: asobolev <asobolev@student.42istanbul.com.t+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/16 15:24:59 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/19 05:45:55 by asobolev         ###   ########.fr       */
+/*   Updated: 2026/02/19 06:13:38 by asobolev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 	while (*lst)
 	{
 		tempr = (*lst)->next;
-		ft_lstdelone(*lst, free);
+		ft_lstdelone(*lst, del);
 		*lst = tempr;
 	}
 }
