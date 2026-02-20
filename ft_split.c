@@ -6,7 +6,7 @@
 /*   By: asobolev <asobolev@student.42istanbul.com.t+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/13 17:02:31 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/20 15:16:44 by asobolev         ###   ########.fr       */
+/*   Updated: 2026/02/20 15:29:51 by asobolev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,9 +46,9 @@ static void	freeptr(char **ptr)
 
 char	**ft_split(char const *s, char c)
 {
-	int	wordcount;
-	int	i;
-	int	j;
+	int		wordcount;
+	int		i;
+	int		j;
 	char	**ptr;
 
 	if (!s)
