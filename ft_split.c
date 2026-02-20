@@ -6,13 +6,13 @@
 /*   By: asobolev <asobolev@student.42istanbul.com.t+#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/13 17:02:31 by asobolev          #+#    #+#             */
-/*   Updated: 2026/02/20 15:14:17 by asobolev         ###   ########.fr       */
+/*   Updated: 2026/02/20 15:16:44 by asobolev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	wordcount(char const *s, char c)
+static int	get_wordcount(char const *s, char c)
 {
 	int	wordcount;
 
@@ -53,7 +53,7 @@ char	**ft_split(char const *s, char c)
 
 	if (!s)
 		return (NULL);
-	wordcount = wordcount(s, c);
+	wordcount = get_wordcount(s, c);
 	i = 0;
 	ptr = ft_calloc(wordcount + 1, sizeof(char *));
 	if (!ptr)
